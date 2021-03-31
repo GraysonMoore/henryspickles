@@ -1,0 +1,220 @@
+body {	
+	background-color: green;
+}
+section {
+	width: 100%;
+	padding-bottom: 5px;
+}
+section img {
+	width: 40%;
+}
+p, footer {
+	margin-top: 10px;
+	font-size: 20px;
+	font-family: Ariel, cursive;
+	margin-left: 10px;
+}
+footer {
+	margin-top: 30px;
+}
+
+.paragraph {
+	width: 50%;
+}
+
+/*-------------------------------------TITLE----------------------------*/
+
+.body {
+	width: 80%;
+	margin: auto;
+	background-color: white;
+}
+.head {
+	float: right;
+	margin-right: 20px;
+	margin-top: 80px;
+	font-family: Calibri;
+	font-size: 53px;
+}
+
+/*-------------------------------LINK BAR---------------------------------*/
+
+.links {
+	background-color: green;
+}
+ul {
+	list-style-type: none;
+	display: flex;
+	text-align: center;
+	padding: 0px;
+	margin-left: 0px;
+	font-family: Calibri;
+	font-size: 30px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#l {
+	width: 30%;	
+}
+
+/*-------------------------------SURVEY BUTTONS---------------------------*/
+
+#originalbutton {
+	margin-left: 100px;
+}
+#garlicbutton {
+	margin-left: 170px;
+}
+#spicybutton {
+	margin-left: 180px;
+}
+.counters {
+	margin-top: 20px;
+}
+#counter {
+	font-size: 20px;
+	margin-left: 70px;
+}
+#counter2 {
+	margin-left: 100px;
+	font-size: 20px;
+}
+#counter3 {
+	margin-left: 130px;
+	font-size: 20px;
+}
+
+/*--------------------------------Email Info--------------------------------*/
+
+.orderhead {
+	text-align: center;
+}
+
+.emailInfo {
+	text-align: center;
+	font-size: 20px;
+}
+option, select {
+	font-size: 20px;
+}
+
+.cost {
+	margin-left: 20%;
+	font-size: 15px;
+}
+
+#calculate {
+	font-size: 17px;
+}
+
+.sendButton {
+	float: right;
+	margin-right: 20%;
+	margin-top: -14%;
+	font-size: 30px;
+}
+
+.dress1 {
+	margin-left: -60%;
+}
+
+.dress2 {
+	margin-top: -5.5%;
+	text-align: center;
+}
+
+.dress3 {
+	margin-top: -5.5%;
+	float: right;
+	margin-right: 10%;
+}
+
+textarea {
+	resize: none;
+}
+
+/*---------------------------------Orders------------------------------------*/
+
+.order1 {
+	font-size: 20px;
+	margin-left: -70%;
+}
+
+.form1 {
+	text-align: center;
+}
+
+.amount1title {
+	font-size: 30px;
+	text-decoration: underline;
+}
+
+.order2 {
+	margin-top: -21.5%;
+	text-align: center;
+	font-size: 20px;
+}
+.amount2title {
+	font-size: 30px;
+	text-decoration: underline;
+}
+
+.order3 {
+	float: right;
+	margin-top: -21.5%;
+	margin-right: 7%;
+	font-size: 20px;
+	padding: 0px;
+}
+
+.form3 {
+	text-align: center;
+}
+
+.amount3title {
+	font-size: 30px;
+	text-decoration: underline;
+}
+
+.optional {
+	color: red;
+	font-size: 15px;
+}
+
+.optional2 {
+	color: red;
+	font-size: 16px;
+	text-align: center;
+	margin-top: -15px;
+}
+
+/*--------------------------------Reviews----------------------------*/
+
+.reviewinput {
+	font-size: 20px;
+	text-align: center;
+}
+
+.reviewoutput {
+	text-align: left;
+}
+
+.nameoutput, .5output, .commentoutput {
+	text-align: left;
+	width: 50%;
+}
+
+ol {
+	text-align: left;
+	list-style-type: none;
+}
+
+/*------------------------------------Picture 1---------------------------*/
+
+.pic1 {
+	width: 45%;
+	float: right;
+	margin-left: 0px;
+	margin-top: -650px;
+	margin-right: 20px;
+}
