@@ -120,7 +120,7 @@ $("#calculate").click(function(event) {
 
 /*-------------------------------------------------------------------------------*/
 
-$(document).ready(function() {
+
 
 	$("#sendEmail").click(function() {
 		var userName = $("input[name=name]").val();
@@ -158,6 +158,6 @@ $(document).ready(function() {
 		}
 	});
 
-});
+
 	
 	
