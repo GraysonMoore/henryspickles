@@ -74,6 +74,25 @@ $("#calculate").click(function(event) {
 	  $('#review5').val('');
 	  clearStorage();
 	});
+	
+	function bindCmt(){
+	  
+	  
+	  	var cmtListElement = $('#cmtlist'),
+	      cmtList = getObject('cmtlist');
+	  
+	  //Out with the old
+	  cmtListElement.empty();
+	  //And in with the new
+	  $.each(cmtList, function(i, k){
+	    cmtListElement.append( $('<p><span><b>'+ k.name +'</b></span><br>'+ k.num + '/5<br>' + k.text + '</p>') );
+	  });
+	}
+
+	//Get the comments on page ready
+	$(function(){
+	  bindCmt();
+	});
 
 	$("#post").click(function() { 
 	  var cText = $('#txt1').val(),
@@ -99,24 +118,7 @@ $("#calculate").click(function(event) {
 	  };
 	});
 
-	function bindCmt(){
-	  
-	  
-	  	var cmtListElement = $('#cmtlist'),
-	      cmtList = getObject('cmtlist');
-	  
-	  //Out with the old
-	  cmtListElement.empty();
-	  //And in with the new
-	  $.each(cmtList, function(i, k){
-	    cmtListElement.append( $('<p><span><b>'+ k.name +'</b></span><br>'+ k.num + '/5<br>' + k.text + '</p>') );
-	  });
-	}
-
-	//Get the comments on page ready
-	$(function(){
-	  bindCmt();
-	});
+	
 
 /*-------------------------------------------------------------------------------*/
 
