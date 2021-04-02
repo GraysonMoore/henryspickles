@@ -1,5 +1,5 @@
 <?php
-	//if (count($_POST) > 0) {
+	if ($_POST) {
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$address = $_POST['address'];
@@ -38,5 +38,5 @@
 		} else {
 			die("There was an error sending the email.");
 		}
-	//}
+	}
 ?>
