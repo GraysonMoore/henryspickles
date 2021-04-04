@@ -143,7 +143,7 @@ $("#calculate").click(function(event) {
 		var quantity3 = Number($("#amount3").val());
 
 		if(quantity1 > 20 || quantity2 > 20 || quantity3 > 20) {
-			alert("I know pickles are good, but you can only buy 20 pickles at once");
+			alert("I know pickles are good, but you can only buy 20 jars at once");
 		} else if(userName == "" || userEmail == "" || userAmount1 == "" || userAddress == "" || userCity == "" || userState == "") {
 			alert("Form not complete");
 		} else {
@@ -182,7 +182,7 @@ $("#calculate").click(function(event) {
 				<hr />
 				Email end";
 
-				mail("ghmmoore@gmail.com", "A user sent you an email", $body, $header);
+				mail("ghmmoore@gmail.com", "You have a order!", $body, $header);
 			?>
 			
 			$("#sendEmail").text("Sent!");
