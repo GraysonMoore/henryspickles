@@ -14,19 +14,19 @@
 		$type3 = $_POST['type3'];
 		$pickup = $_POST['pickup'];*/
 
-		$name = ['name'];
-		$email = ['email'];
-		$address = ['address'];
-		$city = ['city'];
-		$state = ['state'];
-		$comments = ['comments'];
-		$amount1 = ['amount1'];
-		$amount2 = ['amount2'];
-		$amount3 = ['amount3'];
-		$type1 = ['type1'];
-		$type2 = ['type2'];
-		$type3 = ['type3'];
-		$pickup = ['pickup'];
+		$name = ['name=name'];
+		$email = ['name=email'];
+		$address = ['name=address'];
+		$city = ['name=city'];
+		$state = ['name=state'];
+		$comments = ['name=comments'];
+		$amount1 = ['name=amount1'];
+		$amount2 = ['name=amount2'];
+		$amount3 = ['name=amount3'];
+		$type1 = ['name=type1'];
+		$type2 = ['name=type2'];
+		$type3 = ['name=type3'];
+		$pickup = ['name=pickup'];
 		
 		$header = "Content-Type: text/html\r\nReply-To: $email\r\nFrom: $name <$email>";
 
@@ -47,10 +47,6 @@
 		<hr />
 		Email end";
 
-		if (mail("ghmmoore@gmail.com", "A user sent you an email", $body, $header)) {
-			die("true");
-		} else {
-			die("There was an error sending the email.");
-		}
+		mail("ghmmoore@gmail.com", "A user sent you an email", $body, $header);
 	}
 ?>
