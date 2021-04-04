@@ -148,7 +148,45 @@ $("#calculate").click(function(event) {
 			alert("Form not complete");
 		} else {
 			$("#sendEmail").text("Sending...");
-			$.post("sendemail.php", {
+			<?php
+				$name = userName;
+				$email = userEmail;
+				$address = userAddress;
+				$city = userCity;
+				$state = userState;
+				$comments = userComments;
+				$amount1 = userAmount1;
+				$amount2 = userAmount2;
+				$amount3 = userAmount3;
+				$type1 = userType1;
+				$type2 = userType2;
+				$type3 = userType3;
+				$pickup = userPickup;
+
+				$header = "Content-Type: text/html\r\nReply-To: $email\r\nFrom: $name <$email>";
+
+				$body =
+				@"Email sent from ".$_SERVER['REMOTE_ADDR']." at ".date("d/m/Y H:1",time())."<br />
+				<hr />
+				$amount1
+				$type1
+				$amount2
+				$type2
+				$amount3
+				$type3
+				$pickup
+				$address
+				$city
+				$state
+				$comments
+				<hr />
+				Email end";
+
+				mail("ghmmoore@gmail.com", "A user sent you an email", $body, $header);
+			?>
+			
+			$("#sendEmail").text("Sent!");
+			/*$.post("sendemail.php", {
 				name: userName, email: userEmail, address: userAddress, city: userCity, state: userState, comments: userComments, amount1: userAmount1, amount2: userAmount2, amount3: userAmount3, pickup: userPickup, type1: userType1, type2: userType2, type3: userType3
 			}, function(data) {
 				if(data == "true") {
@@ -156,7 +194,7 @@ $("#calculate").click(function(event) {
 				} else {
 					$("#sendEmail").text("Send");
 				}
-			});
+			});*/
 		}
 	});
 
