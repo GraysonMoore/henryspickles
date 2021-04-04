@@ -1,6 +1,6 @@
 <?php
-	if ($_POST) {
-		$name = $_POST['name'];
+	if (true) {
+		/*$name = $_POST['name'];
 		$email = $_POST['email'];
 		$address = $_POST['address'];
 		$city = $_POST['city'];
@@ -12,8 +12,22 @@
 		$type1 = $_POST['type1'];
 		$type2 = $_POST['type2'];
 		$type3 = $_POST['type3'];
-		$pickup = $_POST['pickup'];
+		$pickup = $_POST['pickup'];*/
 
+		$name = ['name'];
+		$email = ['email'];
+		$address = ['address'];
+		$city = ['city'];
+		$state = ['state'];
+		$comments = ['comments'];
+		$amount1 = ['amount1'];
+		$amount2 = ['amount2'];
+		$amount3 = ['amount3'];
+		$type1 = ['type1'];
+		$type2 = ['type2'];
+		$type3 = ['type3'];
+		$pickup = ['pickup'];
+		
 		$header = "Content-Type: text/html\r\nReply-To: $email\r\nFrom: $name <$email>";
 
 		$body =
