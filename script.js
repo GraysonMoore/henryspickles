@@ -141,6 +141,7 @@ $("#calculate").click(function(event) {
 		var quantity1 = Number($("#amount1").val());
 		var quantity2 = Number($("#amount2").val());
 		var quantity3 = Number($("#amount3").val());
+		var data = false;
 
 		if(quantity1 > 20 || quantity2 > 20 || quantity3 > 20) {
 			alert("I know pickles are good, but you can only buy 20 jars at once");
@@ -148,48 +149,7 @@ $("#calculate").click(function(event) {
 			alert("Form not completed");
 		} else {
 			$("#sendEmail").text("Sending...");
-			<?php
-				mail("ghmmoore@gmail.com","It Works!","HI");	
-			?>
-			/*<?php
-				$name = userName;
-				$email = userEmail;
-				$address = userAddress;
-				$city = userCity;
-				$state = userState;
-				$comments = userComments;
-				$amount1 = userAmount1;
-				$amount2 = userAmount2;
-				$amount3 = userAmount3;
-				$type1 = userType1;
-				$type2 = userType2;
-				$type3 = userType3;
-				$pickup = userPickup;
-
-				$header = "Content-Type: text/html\r\nReply-To: $email\r\nFrom: $name <$email>";
-
-				$body =
-				@"Email sent from ".$_SERVER['REMOTE_ADDR']." at ".date("d/m/Y H:1",time())."<br />
-				<hr />
-				$amount1
-				$type1
-				$amount2
-				$type2
-				$amount3
-				$type3
-				$pickup
-				$address
-				$city
-				$state
-				$comments
-				<hr />
-				Email end";
-
-				mail("ghmmoore@gmail.com", "You have a order!", $body, $header);
-			?>
-			
-			$("#sendEmail").text("Sent!");*/
-			
+			data = true;
 			
 			/*$.post("sendemail.php", {
 				name: userName, email: userEmail, address: userAddress, city: userCity, state: userState, comments: userComments, amount1: userAmount1, amount2: userAmount2, amount3: userAmount3, pickup: userPickup, type1: userType1, type2: userType2, type3: userType3
@@ -201,6 +161,7 @@ $("#calculate").click(function(event) {
 				}
 			});*/
 		}
+		
 	});
 
 
