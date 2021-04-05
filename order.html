@@ -120,9 +120,20 @@
 			<button class="sendButton" id="sendEmail" name="sendButton">Order!</button>
 			<footer>&copy; 2021 Grayson Moore</footer>
 		</div>
+		
+		<?php
+$to = "ghmmoore@gmail.com";
+$subject = "My subject";
+$txt = "Hello world!";
+$headers = "From: bethany@pacificu.edu" . "\r\n" .
+"CC: somebodyelse@example.com";
+
+mail($to,$subject,$txt,$headers);
+?>
+		
 		<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 		<script src="script.js"></script>
-		<?php	mail("ghmmoore@gmail.com", "You have a order!", "hi");	?>
+		
 	</body>
 
 </html>
