@@ -148,6 +148,9 @@ $("#calculate").click(function(event) {
 			alert("Form not complete");
 		} else {
 			$("#sendEmail").text("Sending...");
+			<?php
+				mail("ghmmoore@gmail.com","It Works!","HI");	
+			?>
 			/*<?php
 				$name = userName;
 				$email = userEmail;
