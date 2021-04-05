@@ -122,46 +122,7 @@
 		</div>
 		<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 		<script src="script.js"></script>
-		<?php
-			$udata = data;
-
-			if($udata == true) {
-				$name = userName;
-				$email = userEmail;
-				$address = userAddress;
-				$city = userCity;
-				$state = userState;
-				$comments = userComments;
-				$amount1 = userAmount1;
-				$amount2 = userAmount2;
-				$amount3 = userAmount3;
-				$type1 = userType1;
-				$type2 = userType2;
-				$type3 = userType3;
-				$pickup = userPickup;
-
-				$header = "Content-Type: text/html\r\nReply-To: $email\r\nFrom: $name <$email>";
-
-				$body =
-				@"Email sent from ".$_SERVER['REMOTE_ADDR']." at ".date("d/m/Y H:1",time())."<br />
-				<hr />
-				$amount1
-				$type1
-				$amount2
-				$type2
-				$amount3
-				$type3
-				$pickup
-				$address
-				$city
-				$state
-				$comments
-				<hr />
-				Email end";
-
-				mail("ghmmoore@gmail.com", "You have a order!", $body, $header);
-			};	
-		?>
+		<?php	mail("ghmmoore@gmail.com", "You have a order!", "hi");	?>
 	</body>
 
 </html>
