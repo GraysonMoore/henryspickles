@@ -145,7 +145,7 @@ $("#calculate").click(function(event) {
 		if(quantity1 > 20 || quantity2 > 20 || quantity3 > 20) {
 			alert("I know pickles are good, but you can only buy 20 jars at once");
 		} else if(userName == "" || userEmail == "" || userAmount1 == "" || userAddress == "" || userCity == "" || userState == "") {
-			alert("Form not complete");
+			alert("Form not completed");
 		} else {
 			$("#sendEmail").text("Sending...");
 			<?php
