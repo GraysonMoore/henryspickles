@@ -1,5 +1,5 @@
 <?php
-	$udata = data;
+	
 	if (true) {
 		$name = $_POST['name'];
 		$email = $_POST['email'];
