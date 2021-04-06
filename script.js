@@ -142,15 +142,26 @@ $("#calculate").click(function(event) {
 		var quantity2 = Number($("#amount2").val());
 		var quantity3 = Number($("#amount3").val());
 		
+		var userData = userName + userEmail; 
+		console.log(userData);
 
 		if(quantity1 > 20 || quantity2 > 20 || quantity3 > 20) {
 			alert("I know pickles are good, but you can only buy 20 jars at once");
 		} else if(userName == "" || userEmail == "" || userAmount1 == "" || userAddress == "" || userCity == "" || userState == "") {
-			alert("Form not complete");
+			alert("Form not completed");
 		} else {
 			$("#sendEmail").text("Sending...");
 			
-			$.send("sendemail.php", {
+			$.ajax({
+				type: "POST",
+				url: "sendemail.php",
+				data: userData,
+				success: function() {
+					alert("It was a success!");
+				}
+			});
+			
+			/*$.post("sendemail.php", {
 				name: userName, email: userEmail, address: userAddress, city: userCity, state: userState, comments: userComments, amount1: userAmount1, amount2: userAmount2, amount3: userAmount3, pickup: userPickup, type1: userType1, type2: userType2, type3: userType3
 			}, function(data) {
 				if(data == "true") {
@@ -158,7 +169,7 @@ $("#calculate").click(function(event) {
 				} else {
 					$("#sendEmail").text("Send");
 				}
-			});
+			});*/
 		}
 		
 	});
