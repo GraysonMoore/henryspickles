@@ -1,6 +1,4 @@
 <?php
-	
-	if (true) {
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$address = $_POST['address'];
@@ -34,5 +32,5 @@
 		Email end";
 
 		mail("ghmmoore@gmail.com", "You have an order!", $body, $header);
-	}
+	
 ?>
