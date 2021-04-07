@@ -29,7 +29,7 @@
 				if(quantity1 > 20 || quantity2 > 20 || quantity3 > 20) {
 					alert("I know pickles are good, but you can only buy 20 pickles at once");
 				} else if(userName == "" || userEmail == "" || userAmount1 == "" || userAddress == "" || userCity == "" || userState == "") {
-					alert("Form not completed");
+					alert("Form not complete");
 				} else {
 					$("#sendEmail").text("Sending...");
 					$.post("sendemail.php", {
