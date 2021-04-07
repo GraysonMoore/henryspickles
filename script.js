@@ -120,7 +120,7 @@ $("#calculate").click(function(event) {
 
 	
 
-/*-------------------------------------------------------------------------------
+/*-------------------------------------------------------------------------------*/
 
 
 
@@ -142,9 +142,6 @@ $("#calculate").click(function(event) {
 		var quantity2 = Number($("#amount2").val());
 		var quantity3 = Number($("#amount3").val());
 		
-		var userData = userName + userEmail; 
-		console.log(userData);
-
 		if(quantity1 > 20 || quantity2 > 20 || quantity3 > 20) {
 			alert("I know pickles are good, but you can only buy 20 jars at once");
 		} else if(userName == "" || userEmail == "" || userAmount1 == "" || userAddress == "" || userCity == "" || userState == "") {
@@ -152,27 +149,19 @@ $("#calculate").click(function(event) {
 		} else {
 			$("#sendEmail").text("Sending...");
 			
-			$.ajax({
-				type: "POST",
-				url: "sendemail.php",
-				data: userData,
-				success: function() {
-					alert("It was a success!");
-				}
-			});
+//name: userName, email: userEmail, address: userAddress, city: userCity, state: userState, comments: userComments, amount1: userAmount1, amount2: userAmount2, amount3: userAmount3, pickup: userPickup, type1: userType1, type2: userType2, type3: userType3
 			
-			$.post("sendemail.php", {
-				name: userName, email: userEmail, address: userAddress, city: userCity, state: userState, comments: userComments, amount1: userAmount1, amount2: userAmount2, amount3: userAmount3, pickup: userPickup, type1: userType1, type2: userType2, type3: userType3
-			}, function(data) {
-				if(data == "true") {
+			$.get("sendemail.php", function(data) {
+				alert(data);
+				/*if(data == "true") {
 					$("#sendEmail").text("Sent!");
 				} else {
 					$("#sendEmail").text("Send");
-				}
+				}*/
 			});
 		}
 		
-	});*/
+	});
 
 
 	
