@@ -151,13 +151,15 @@ $("#calculate").click(function(event) {
 			
 //name: userName, email: userEmail, address: userAddress, city: userCity, state: userState, comments: userComments, amount1: userAmount1, amount2: userAmount2, amount3: userAmount3, pickup: userPickup, type1: userType1, type2: userType2, type3: userType3
 			
-			$.get("sendemail.php", function(data) {
-				alert(data);
-				/*if(data == "true") {
+			$.get("sendemail.php", {
+				name: userName	      
+			}, function(data) {
+				if(data) {
 					$("#sendEmail").text("Sent!");
 				} else {
 					$("#sendEmail").text("Send");
-				}*/
+					alert(data);
+				}
 			});
 		}
 		
