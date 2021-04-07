@@ -156,9 +156,10 @@ $("#calculate").click(function(event) {
 			}, function(data) {
 				if(data) {
 					$("#sendEmail").text("Sent!");
+					alert(data);
 				} else {
 					$("#sendEmail").text("Send");
-					alert(data);
+					alert("BAD: " + data);
 				}
 			});
 		}
