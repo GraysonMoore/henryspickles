@@ -32,5 +32,7 @@
 		<hr />"
 
 		mail("ghmmoore@gmail.com", "You have an order!", $body, $header);
+		
+		echo '<script>alert("email working!!!!!!!!?????????");</script>';
 	}
 
