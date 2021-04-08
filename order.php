@@ -1,3 +1,6 @@
+<?php
+	header("order.html");
+?>
 <!DOCTYPE>
 <html>
 	<head>
