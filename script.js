@@ -157,8 +157,8 @@ $("#calculate").click(function(event) {
 				if(data == "true") {
 					$("#sendEmail").text("Sent!");
 				} else {
-					$("#sendEmail").text("Send");
-					alert(data);
+					$("#sendEmail").text("Order!");
+					alert("BAD: " + data);
 				}
 			});
 		}
