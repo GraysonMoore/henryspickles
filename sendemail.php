@@ -1,5 +1,9 @@
 <?php
-	if(isset($_POST['sendButton'])) {
+	echo '<pre>';
+		print_r($_POST);
+	echo '</pre>';
+
+	/*if(isset($_POST['sendButton'])) {
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$address = $_POST['address'];
@@ -16,7 +20,7 @@
 		
 		$header = "Content-Type: text/html\r\nReply-To: $email\r\nFrom: $name <$email>";
 
-		$body = /*@"Email sent from ".$_SERVER['REMOTE_ADDR']." at ".date("d/m/Y H:1",time()).*/"<br />
+		$body = @"Email sent from ".$_SERVER['REMOTE_ADDR']." at ".date("d/m/Y H:1",time())."<br />
 		<hr />
 		$amount1
 		$type1
@@ -36,3 +40,4 @@
 		echo '<script>alert("email working!!!!!!!!?????????");</script>';
 	}
 
+*/
