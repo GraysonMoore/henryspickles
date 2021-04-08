@@ -149,17 +149,16 @@ $("#calculate").click(function(event) {
 		} else {
 			$("#sendEmail").text("Sending...");
 			
-//name: userName, email: userEmail, address: userAddress, city: userCity, state: userState, comments: userComments, amount1: userAmount1, amount2: userAmount2, amount3: userAmount3, pickup: userPickup, type1: userType1, type2: userType2, type3: userType3
+
 			
 			$.get("sendemail.php", {
-				name: userName	      
+				name: userName, email: userEmail, address: userAddress, city: userCity, state: userState, comments: userComments, amount1: userAmount1, amount2: userAmount2, amount3: userAmount3, pickup: userPickup, type1: userType1, type2: userType2, type3: userType3	      
 			}, function(data) {
-				if(data) {
+				if(data == "true") {
 					$("#sendEmail").text("Sent!");
-					alert(data);
 				} else {
 					$("#sendEmail").text("Send");
-					alert("BAD: " + data);
+					alert(data);
 				}
 			});
 		}
