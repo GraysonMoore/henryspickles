@@ -1,9 +1,5 @@
 <?php
-	echo '<pre>';
-		print_r($_POST);
-	echo '</pre>';
-
-	/*if(isset($_POST['sendButton'])) {
+	if(isset($_POST['sendButton'])) {
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$address = $_POST['address'];
@@ -36,8 +32,6 @@
 		<hr />"
 
 		mail("ghmmoore@gmail.com", "You have an order!", $body, $header);
-		
-		echo '<script>alert("email working!!!!!!!!?????????");</script>';
 	}
 
-*/
+?>
