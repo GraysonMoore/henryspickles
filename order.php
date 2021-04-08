@@ -1,5 +1,5 @@
 <?php
-	header("order.html");
+	echo "ndfkjghjihguiehuihtguehsgkuyhgksdghkjhsdkjhgbfkdhkghksdjfkjsdjkfhsjkd HJGFDKJHGBJKHDFBKJHVFBDKBKJFDHBGJDHF";
 ?>
 <!DOCTYPE>
 <html>
