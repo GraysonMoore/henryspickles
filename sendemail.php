@@ -1,5 +1,5 @@
 <?php
-	if(count($_POST) > 0) {
+	if(isset($_POST['sendButton'])) {
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$address = $_POST['address'];
@@ -16,7 +16,7 @@
 		
 		$header = "Content-Type: text/html\r\nReply-To: $email\r\nFrom: $name <$email>";
 
-		$body = /*@"Email sent from ".$_SERVER['REMOTE_ADDR']." at ".date("d/m/Y H:1",time())."*/<br />
+		$body = /*@"Email sent from ".$_SERVER['REMOTE_ADDR']." at ".date("d/m/Y H:1",time()).*/"<br />
 		<hr />
 		$amount1
 		$type1
@@ -29,12 +29,8 @@
 		$city
 		$state
 		$comments
-		<hr />;
+		<hr />"
 
-		if(mail("ghmmoore@gmail.com", "You have an order!", $body, $header)) {
-			die("true");
-		} else {
-			die("There was an error");
-		}
+		mail("ghmmoore@gmail.com", "You have an order!", $body, $header);
 	}
-?>
+
