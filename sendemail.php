@@ -1,7 +1,21 @@
 <?php
 	if(isset($_POST['sendButton'])) {
+		
 		$name = $_POST['name'];
 		$email = $_POST['email'];
+		$msg = $_POST['comments'];
+		
+		$to = "ghmmoore@gmail.com";
+		$subject = "You have an order!";
+		$header = "From: ".$email;
+		
+		if(mail($to,$subject,$msg,$header)) {
+			echo "The email sent!";
+		} else {
+			echo "Not quite... try again";
+		}
+		
+		/*
 		$address = $_POST['address'];
 		$city = $_POST['city'];
 		$state = $_POST['state'];
@@ -31,7 +45,7 @@
 		$comments
 		<hr />"
 
-		mail("ghmmoore@gmail.com", "You have an order!", $body, $header);
+		mail("ghmmoore@gmail.com", "You have an order!", $body, $header);*/
 	}
 
 ?>
