@@ -1,6 +1,4 @@
-<?php
-	if(isset($_POST['sendButton'])) {
-		
+<?php	
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$msg = $_POST['comments'];
@@ -9,11 +7,10 @@
 		$subject = "You have an order!";
 		$header = "From: ".$email;
 		
-		if(mail($to,$subject,$msg,$header)) {
-			echo "The email sent!";
-		} else {
-			echo "Not quite... try again";
-		}
+		
+		mail($to,$subject,$msg);
+		
+		echo "The email sent!";
 		
 		/*
 		$address = $_POST['address'];
@@ -46,6 +43,6 @@
 		<hr />"
 
 		mail("ghmmoore@gmail.com", "You have an order!", $body, $header);*/
-	}
+	
 
 ?>
