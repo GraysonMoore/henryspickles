@@ -1,5 +1,23 @@
-<?php	
-		$name = $_POST['name'];
+	
+		
+
+		<?php    if (isset($_REQUEST['email']))  {      
+			$admin_email = "someone@example.com";   
+			$email = $_REQUEST['email'];   
+			$subject = $_REQUEST['subject'];   
+			$comment = $_REQUEST['comment'];      
+			mail($admin_email, "$subject", $comment, "From:" . $email);      
+			
+			echo "Thank you for contacting us!";   }  else  { ?>   <form method="post">
+	
+   			Email: <input name="email" type="text" />
+   			Subject: <input name="subject" type="text" />
+   			Message:
+   			<textarea name="comment" rows="15" cols="40"></textarea>
+   			<input type="submit" value="Submit" />   </form>    <?php   } ?>
+
+<?php
+		/*$name = $_POST['name'];
 		$email = $_POST['email'];
 		$msg = $_POST['comments'];
 		
@@ -12,7 +30,7 @@
 		
 		echo "The email sent!";
 		
-		/*
+		
 		$address = $_POST['address'];
 		$city = $_POST['city'];
 		$state = $_POST['state'];
