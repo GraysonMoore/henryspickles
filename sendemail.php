@@ -2,7 +2,7 @@
 		
 
 		<?php    if (isset($_REQUEST['email']))  {      
-			$admin_email = "someone@example.com";   
+			$admin_email = "ghmmoore@gmail.com";   
 			$email = $_REQUEST['email'];   
 			$subject = $_REQUEST['subject'];   
 			$comment = $_REQUEST['comment'];      
