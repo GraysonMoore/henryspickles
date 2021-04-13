@@ -4,7 +4,6 @@
 		<meta charset="utf-8">
 		<title>Henry's Dill Pickles</title>
 		<link rel="stylesheet" href="main.css">
-		<?php echo "Hello you stupid code. Why wont this stupid thing work?" ?>
 	</head>
 
 	<body>
@@ -14,7 +13,7 @@
 				<h1 class="head">Henry's Dill Pickles</h1>
 				<div class="links">
 					<ul>
-						<li id="l"><a href="index.php">HOME</a></li>
+						<li id="l"><a href="index.html">HOME</a></li>
 						<li id="l">ORDER</li>
 						<li id="l"><a href="review.html">REVIEWS</a></li>
 						<li id="l"><a href="survey.html">SURVEY</a></li>
@@ -27,7 +26,7 @@
 			
 			
 			
-			<form action="sendemail.php">
+			<form action="formspree.io/ghmmoore@gmail.com" method="post">
 				<div class="emailInfo">
 
 					<label for="emailTo" class="name">Full Name:</label><br>
