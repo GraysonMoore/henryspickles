@@ -1,12 +1,14 @@
-<!DOCTYPE>
+<?php /*<!DOCTYPE>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<title>Henry's Dill Pickles</title>
 		<link rel="stylesheet" href="main.css">
-		<?php echo "This is index. If you click the order button, it should NOT download anything!!" ?>
-	</head>
+		
+	</head>*/
+	?>
 
+	<?php echo "This is index. If you click the order button, it should NOT download anything!!" ?>
 	<body>
 		<div class="body">
 			<section>
