@@ -14,7 +14,7 @@
 				<h1 class="head">Henry's Dill Pickles</h1>
 				<div class="links">
 					<ul>
-						<li id="l"><a href="index.html">HOME</a></li>
+						<li id="l"><a href="index.php">HOME</a></li>
 						<li id="l">ORDER</li>
 						<li id="l"><a href="review.html">REVIEWS</a></li>
 						<li id="l"><a href="survey.html">SURVEY</a></li>
