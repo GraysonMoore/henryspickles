@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Henry's Dill Pickles</title>
 		<link rel="stylesheet" href="main.css">
+		<?php echo "This is index. If you click the order button, it should NOT download anything!!" ?>
 	</head>
 
 	<body>
