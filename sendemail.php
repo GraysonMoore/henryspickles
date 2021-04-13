@@ -1,7 +1,7 @@
 <?php
-		$name = $_GET['name'];
-		$email = $_GET['email'];
-		$msg = $_GET['comments'];
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$msg = $_POST['comments'];
 		
 		$to = "ghmmoore@gmail.com";
 		$subject = "You have an order!";
