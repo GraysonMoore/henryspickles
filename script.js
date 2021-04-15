@@ -162,8 +162,8 @@ $("#calculate").click(function(event) {
 					$("#sendEmail").text("Order!");
 					alert("BAD: " + data);
 				}
-			});*/
-		}
+			});
+		}*/
 		
 	});
 
