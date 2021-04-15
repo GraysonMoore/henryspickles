@@ -142,14 +142,15 @@ $("#calculate").click(function(event) {
 		var quantity2 = Number($("#amount2").val());
 		var quantity3 = Number($("#amount3").val());
 		
-		/*if(quantity1 > 20 || quantity2 > 20 || quantity3 > 20) {
-			alert("I know pickles are good, but you can only buy 20 jars at once");
+		var data = true;
+		
+		if(quantity1 > 20 || quantity2 > 20 || quantity3 > 20) {
+			data = false;
 		} else if(userName == "" || userEmail == "" || userAmount1 == "" || userAddress == "" || userCity == "" || userState == "") {
-			alert("Form not complete");
-		} else {
-			$("#sendEmail").text("Sending...");*/
+			data = false;
+		} else if(data == true) {
 			
-		$("#orderpage").html("<center><h1>Thank you for choosing Henry's Dill Pickles</h1><br><p>We will contact you as soon as we can</p></center>");
+			$("#orderpage").html("<center><h1>Thank you for choosing Henry's Dill Pickles</h1><br><p>We will contact you as soon as we can</p></center>");
 
 			
 			/*$.get("sendemail.php", {
