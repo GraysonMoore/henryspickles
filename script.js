@@ -120,7 +120,7 @@ $("#calculate").click(function(event) {
 
 	
 
-/*-------------------------------------------------------------------------------
+/*-------------------------------------------------------------------------------*/
 
 
 
@@ -149,9 +149,10 @@ $("#calculate").click(function(event) {
 		} else {
 			$("#sendEmail").text("Sending...");
 			
+			$("#orderpage").text("<center><h1>Thank you for choosing Henry's Dill Pickles</h1><br><p>We will contact you as soon as we can</p></center>");
 
 			
-			$.get("sendemail.php", {
+			/*$.get("sendemail.php", {
 				name: userName, email: userEmail, address: userAddress, city: userCity, state: userState, comments: userComments, amount1: userAmount1, amount2: userAmount2, amount3: userAmount3, pickup: userPickup, type1: userType1, type2: userType2, type3: userType3	      
 			}, function(data) {
 				if(data == "true") {
@@ -160,10 +161,10 @@ $("#calculate").click(function(event) {
 					$("#sendEmail").text("Order!");
 					alert("BAD: " + data);
 				}
-			});
+			});*/
 		}
 		
-	});*/
+	});
 
 
 	
