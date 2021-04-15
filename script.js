@@ -47,7 +47,7 @@ $("#calculate").click(function(event) {
 	var qty1 = Number($("#amount1").val());
 	var qty2 = Number($("#amount2").val());
 	var qty3 = Number($("#amount3").val());
-	var deliverytot = Number($("[name=pickup]").val());
+	var deliverytot = Number($("[name=pickup1/delivery2]").val());
 	var pickuptot = $("[name=pickup]").val();
 	var total = qty1 * 5 + qty2 * 5 + qty3 * 5 + deliverytot - 1;
 	$("#total").text("Total Cost: $" + total);
