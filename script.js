@@ -120,7 +120,7 @@ $("#calculate").click(function(event) {
 
 	
 
-/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------
 
 
 
@@ -144,16 +144,16 @@ $("#calculate").click(function(event) {
 		
 		
 		
-		/*if(quantity1 > 20 || quantity2 > 20 || quantity3 > 20) {
+		if(quantity1 > 20 || quantity2 > 20 || quantity3 > 20) {
 			data = false;
 		} else if(userName == "" || userEmail == "" || userAmount1 == "" || userAddress == "" || userCity == "" || userState == "") {
 			data = false;
-		} else if(data == true) {*/
+		} else if(data == true) {
 			
 		$("#orderpage").html("<center><h1>Thank you for choosing Henry's Dill Pickles</h1><br><p>We will contact you as soon as we can</p></center>");
 
 			
-			/*$.get("sendemail.php", {
+			$.get("sendemail.php", {
 				name: userName, email: userEmail, address: userAddress, city: userCity, state: userState, comments: userComments, amount1: userAmount1, amount2: userAmount2, amount3: userAmount3, pickup: userPickup, type1: userType1, type2: userType2, type3: userType3	      
 			}, function(data) {
 				if(data == "true") {
@@ -163,9 +163,9 @@ $("#calculate").click(function(event) {
 					alert("BAD: " + data);
 				}
 			});
-		}*/
+		}
 		
-	});
+	});*/
 
 
 	
