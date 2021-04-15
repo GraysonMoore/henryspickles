@@ -124,7 +124,7 @@ $("#calculate").click(function(event) {
 
 
 
-	$("#sendEmail").click(function() {
+	$("#sendButton").click(function() {
 		var userName = $("input[name=name]").val();
 		var userEmail = $("input[name=email]").val();
 		var userAddress = $("input[name=address]").val();
