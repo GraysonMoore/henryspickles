@@ -45,7 +45,16 @@
 			<footer>&copy; 2021 Grayson Moore</footer>
 		</div>
 		<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-		<script src="script.js"></script>
+		<script src="./easy-comment/jquery.easy-comment.js"></script>
+		jQuery(document).ready(function(){
+
+    			$("#id_of_your_comment_container").EasyComment({
+      				path:"/lab/easy-comment/", //Change it to the folder where you put the easycomment files
+      				moderate:false,
+      				maxReply:5
+    			});
+    			
+    		});
 	</body>
 
 </html>
