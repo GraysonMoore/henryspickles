@@ -57,32 +57,6 @@ ul {
 	width: 30%;	
 }
 
-/*-------------------------------SURVEY BUTTONS---------------------------*/
-
-#originalbutton {
-	margin-left: 100px;
-}
-#garlicbutton {
-	margin-left: 170px;
-}
-#spicybutton {
-	margin-left: 180px;
-}
-.counters {
-	margin-top: 20px;
-}
-#counter {
-	font-size: 20px;
-	margin-left: 70px;
-}
-#counter2 {
-	margin-left: 100px;
-	font-size: 20px;
-}
-#counter3 {
-	margin-left: 130px;
-	font-size: 20px;
-}
 
 /*--------------------------------Email Info--------------------------------*/
 
@@ -187,31 +161,37 @@ textarea {
 
 /*--------------------------------Reviews----------------------------*/
 
-.reviewinput {
-	font-size: 20px;
-	text-align: center;
-}
-
-.reviewoutput {
-	text-align: left;
-}
-
-.nameoutput, .5output, .commentoutput {
-	text-align: left;
-	width: 50%;
-}
-
 ol {
 	text-align: left;
 	list-style-type: none;
 }
 
-/*------------------------------------Picture 1---------------------------*/
 
-.pic1 {
-	width: 40%;
-	float: right;
-	margin-left: 0px;
-	margin-top: -550px;
-	margin-right: 20px;
+
+
+/*-------------------------------SURVEY BUTTONS---------------------------*/
+
+/*#originalbutton {
+	margin-left: 100px;
 }
+#garlicbutton {
+	margin-left: 170px;
+}
+#spicybutton {
+	margin-left: 180px;
+}
+.counters {
+	margin-top: 20px;
+}
+#counter {
+	font-size: 20px;
+	margin-left: 70px;
+}
+#counter2 {
+	margin-left: 100px;
+	font-size: 20px;
+}
+#counter3 {
+	margin-left: 130px;
+	font-size: 20px;
+}*/
