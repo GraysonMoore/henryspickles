@@ -1,4 +1,19 @@
-$(document).ready(function() {
+$("#calculate").click(function() {
+	var qty1 = Number($("#amount1").val());
+	var qty2 = Number($("#amount2").val());
+	var qty3 = Number($("#amount3").val());
+	var deliverytot = Number($("[name=pickupdelivery]").val());
+	var pickuptot = $("[name=pickup]").val();
+	var total = qty1 * 5 + qty2 * 5 + qty3 * 5 + deliverytot - 1;
+	$("#total").text("Total Cost: $" + total);
+});
+
+
+
+
+//-------------------------------------------------------------------------------------------------------------------
+
+/*$(document).ready(function() {
 
 //Original
 	$("#originalbutton").click(function() {
@@ -39,23 +54,15 @@ $(document).ready(function() {
 	});
 	$("#counter3").text("Votes for spicy: " + localStorage.clickcounting);
 
-});
+});*/
 
 /*-------------------------------------------------------------------------------*/
 
-$("#calculate").click(function(event) {
-	var qty1 = Number($("#amount1").val());
-	var qty2 = Number($("#amount2").val());
-	var qty3 = Number($("#amount3").val());
-	var deliverytot = Number($("[name=pickupdelivery]").val());
-	var pickuptot = $("[name=pickup]").val();
-	var total = qty1 * 5 + qty2 * 5 + qty3 * 5 + deliverytot - 1;
-	$("#total").text("Total Cost: $" + total);
-});
+
 
 /*-------------------------------------------------------------------------------*/
 
-	function setObject(key, value) {
+	/*function setObject(key, value) {
 	  window.localStorage.setItem(key, JSON.stringify(value));
 	}
 	function getObject(key) {
@@ -116,7 +123,7 @@ $("#calculate").click(function(event) {
 	  	  $('#review5').val('');
 		  bindCmt();
 	  };
-	});
+	});*/
 
 	
 
