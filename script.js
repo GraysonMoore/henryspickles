@@ -9,12 +9,6 @@ $("#calculate").click(function() {
 });
 
 
-
-$("#sendButton").click(function() {
-	$("#emailform").reset();
-});
-
-
 //-------------------------------------------------------------------------------------------------------------------
 
 /*$(document).ready(function() {
