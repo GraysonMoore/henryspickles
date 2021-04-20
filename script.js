@@ -9,12 +9,6 @@ $("#calculate").click(function() {
 });
 
 
-var originalstock = Number($("[name=type1]").val());
-if(originalstock == 2) {
-	alert("Sorry, garlic is out of stock");
-};
-
-
 //-------------------------------------------------------------------------------------------------------------------
 
 /*$(document).ready(function() {
