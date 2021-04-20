@@ -11,7 +11,7 @@ $("#calculate").click(function() {
 
 
 $("#sendButton").click(function() {
-	location.reload();
+	$("#emailform").reset();
 });
 
 
