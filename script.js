@@ -6,7 +6,7 @@ $("#calculate").click(function() {
 	var pickuptot = $("[name=pickup]").val();
 	var total = qty1 * 5 + qty2 * 5 + qty3 * 5 + deliverytot - 1;
 	$("#total").text("Total Cost: $" + total);
-	if(qty1 == 2011) {
+	if(qty1 == 147258369) {
 		$("#orderpage").html("<center><h1>Grayson knows the secret code and he is AWESOME!!!</h1></center>");
 	}
 });
