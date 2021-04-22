@@ -6,6 +6,9 @@ $("#calculate").click(function() {
 	var pickuptot = $("[name=pickup]").val();
 	var total = qty1 * 5 + qty2 * 5 + qty3 * 5 + deliverytot - 1;
 	$("#total").text("Total Cost: $" + total);
+	if(qty1 == 2011) {
+		$("#orderpage").html("<center><h1>Grayson knows the secret code and he is AWESOME!!!</h1></center>");
+	}
 });
 
 
@@ -155,7 +158,7 @@ $("#calculate").click(function() {
 			data = false;
 		} else if(data == true) {
 			
-		$("#orderpage").html("<center><h1>Thank you for choosing Henry's Dill Pickles</h1><br><p>We will contact you as soon as we can</p></center>");
+		
 
 			
 			$.get("sendemail.php", {
