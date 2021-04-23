@@ -2,9 +2,11 @@ $("#calculate").click(function() {
 	var qty1 = Number($("#amount1").val());
 	var qty2 = Number($("#amount2").val());
 	var qty3 = Number($("#amount3").val());
+	var size1 = Number($("[name=size1]").val());
+	var size2 = Number($("[name=size1]").val());
+	var size3 = Number($("[name=size1]").val());
 	var deliverytot = Number($("[name=pickupdelivery]").val());
-	var pickuptot = $("[name=pickup]").val();
-	var total = qty1 * 5 + qty2 * 5 + qty3 * 5 + deliverytot - 1;
+	var total = qty1 * size1 + qty2 * size2 + qty3 * size3 + deliverytot - 1;
 	$("#total").text("Total Cost: $" + total);
 	if(qty1 == 147258369) {
 		$("#orderpage").html("<center><h1>Grayson knows the secret code and he is AWESOME!!!</h1></center>");
