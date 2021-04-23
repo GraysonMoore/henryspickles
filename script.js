@@ -3,8 +3,8 @@ $("#calculate").click(function() {
 	var qty2 = Number($("#amount2").val());
 	var qty3 = Number($("#amount3").val());
 	var size1 = Number($("[name=size1]").val());
-	var size2 = Number($("[name=size1]").val());
-	var size3 = Number($("[name=size1]").val());
+	var size2 = Number($("[name=size2]").val());
+	var size3 = Number($("[name=size3]").val());
 	var deliverytot = Number($("[name=pickupdelivery]").val());
 	var total = qty1 * size1 + qty2 * size2 + qty3 * size3 + deliverytot - 1;
 	$("#total").text("Total Cost: $" + total);
