@@ -21,7 +21,7 @@ $(document).ready(function() {
 	var type2 = Number($("[name=type2]").val());
 	var type3 = Number($("[name=type3]").val());
 	if(type1 == 2) {
-		$("#quart").text("Quart");
+		$("#quart").text("blah");
 	} else {
 		$("#quart").text("Quart - Out of stock");
 	}
