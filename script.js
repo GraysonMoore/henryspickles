@@ -13,6 +13,22 @@ $("#calculate").click(function() {
 	}
 });
 
+$(document).ready(function() {
+	var size1 = Number($("[name=size1]").val());
+	var size2 = Number($("[name=size2]").val());
+	var size3 = Number($("[name=size3]").val());
+	var type1 = Number($("[name=type1]").val());
+	var type2 = Number($("[name=type2]").val());
+	var type3 = Number($("[name=type3]").val());
+	if(type1 == 1) {
+		$("#quart").text("Quart");
+	} else {
+		$("#quart").text("Quart - Out of stock");
+	}
+}); 
+
+
+
 
 //-------------------------------------------------------------------------------------------------------------------
 
