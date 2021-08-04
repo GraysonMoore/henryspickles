@@ -20,7 +20,7 @@ $(document).ready(function() {
 	var type1 = Number($("[name=type1]").val());
 	var type2 = Number($("[name=type2]").val());
 	var type3 = Number($("[name=type3]").val());
-	if(type1 == 1) {
+	if(type1 == 2) {
 		$("#quart").text("Quart");
 	} else {
 		$("#quart").text("Quart - Out of stock");
