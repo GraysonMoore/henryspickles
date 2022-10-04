@@ -8,7 +8,7 @@ $("#calculate").click(function() {
 	var size2 = Number($("[name=size2]").val());
 	var size3 = Number($("[name=size3]").val());*/
 	var deliverytot = Number($("#pickup").val());
-	var total = qty1 * 5 + deliverytot;
+	var total = qty1 * 5 + deliverytot - 1;
 	$("#total").text("Total Cost: $" + total);
 	if(qty1 == 147258369) {
 		$("#orderpage").html("<center><h1>Grayson knows the secret code and he is awesome!</h1></center>");
