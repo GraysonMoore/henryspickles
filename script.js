@@ -7,11 +7,11 @@ $("#calculate").click(function() {
 	/*var size1 = Number($("[name=size1]").val());
 	var size2 = Number($("[name=size2]").val());
 	var size3 = Number($("[name=size3]").val());*/
-	var deliverytot = Number($("[name=pickupdelivery]").val());
-	var total = qty1 * 5;
+	var deliverytot = Number($("#pickup").val());
+	var total = qty1 * 5 + deliverytot;
 	$("#total").text("Total Cost: $" + total);
 	if(qty1 == 147258369) {
-		$("#orderpage").html("<center><h1>Grayson knows the secret code and he is AWESOME!!!</h1></center>");
+		$("#orderpage").html("<center><h1>Grayson knows the secret code and he is awesome!</h1></center>");
 	}
 });
 
