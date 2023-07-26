@@ -31,10 +31,10 @@
 				<form id="emailform">
 					<div class="emailInfo">
 
-						<label for="emailTo" class="name">Full Name:</label><br>
+						<label for="name" class="name">Full Name:</label><br>
 						<input type="text" id="name" name="name" required><br><br>
 
-						<label for="emailFrom" class="email">Your Email:</label><br>
+						<label for="email" class="email">Your Email:</label><br>
 						<input type="email" id="email" name="email" required><br><br>
 
 						<label for="address">Street Address:</label><br>
@@ -166,7 +166,7 @@
 						</div>-->
 					</div><br>
 
-					<input type="submit" value="Order!" name="submit" class="sendButton" id="insertdata">
+					<input type="submit" name="submit" class="sendButton" id="insertdata">
 				</form>
 				<div class="cost">
 					<button id="calculate">Calculate Cost</button><br>
@@ -218,7 +218,10 @@
 					const comments = document.getElementById("comments").value;
 					const ordertype1 = document.getElementById("type1").value;
 					const orderamount1 = document.getElementById("amount1").value;
-						    
+
+					if(name == "") {
+						
+					} else {
 				                
 			                set(ref(db, "Customers/" + name), {
 				        	name: name,
@@ -236,6 +239,8 @@
 				        .catch((error)=>{
 				        	alert("Unsuccessful, error " + error);
 				        });
+
+					}
 			        });
 				
 			</script>
