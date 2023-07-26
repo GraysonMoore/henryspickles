@@ -7,7 +7,6 @@
 	</head>
 
 	<body>
-		<!--This new taste has more of everything! In other words, less "cucumber", more "pickle" flavor!! Try it out, and tell us what you think or email us at ghmmoore@Gmail.com!!-->
 		<div class="body">
 			<section>
 				<a href="index.html"><img src="Logo2.png"></a>
@@ -29,7 +28,7 @@
 				<p class="optional2">Venmo order total to @BETHANY-MOORE-0</p><br>
 
 
-				<form action="https://formspree.io/f/xgervvek" method="POST" id="emailform">
+				<form id="emailform">
 					<div class="emailInfo">
 
 						<label for="emailTo" class="name">Full Name:</label><br>
@@ -37,8 +36,6 @@
 
 						<label for="emailFrom" class="email">Your Email:</label><br>
 						<input type="email" id="emailFrom" name="email" required><br><br>
-
-						<input type="hidden" name="_subject" value="You have an order!"/>
 
 						<label for="address">Street Address:</label><br>
 						<input type="text" id="address" name="address" required><br><br>
@@ -51,7 +48,7 @@
 						<br><br>
 
 						<label for="comments">Comments or Questions?</label><br>
-						<textarea id="comments" name="comments" cols="30" rows="8"></textarea><br><br><br>
+						<textarea id="comments" name="comments" cols="20" rows="8"></textarea><br><br><br>
 
 						<label for="pickup" class="pickup">Pickup or Delivery?</label><br>
 						<p class="optional">Local Deliveries Only!</p>
@@ -179,7 +176,28 @@
 			
 			<footer>&copy; 2021 Grayson Moore</footer>
 		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script type="module">
+				// Import the functions you need from the SDKs you need
+				import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+				// TODO: Add SDKs for Firebase products that you want to use
+				// https://firebase.google.com/docs/web/setup#available-libraries
+			
+				// Your web app's Firebase configuration
+				const firebaseConfig = {
+				apiKey: "AIzaSyDEd3p345bo8RKRsLjbQo1AKbNG-BLwN9g",
+				authDomain: "henry-s-pickle-orders.firebaseapp.com",
+				databaseURL: "https://henry-s-pickle-orders-default-rtdb.firebaseio.com",
+				projectId: "henry-s-pickle-orders",
+				storageBucket: "henry-s-pickle-orders.appspot.com",
+				messagingSenderId: "296129910902",
+				appId: "1:296129910902:web:9b405c070cd67e78242757"
+				};
+			
+				// Initialize Firebase
+				const app = initializeApp(firebaseConfig);
+				
+				
+			</script>
 		<script src="script.js"></script>
 		
 	</body>
