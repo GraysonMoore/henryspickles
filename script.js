@@ -1,26 +1,25 @@
-document.querySelector("#calculate").addEventListener("click", ()=>{
+/*document.querySelector("#calculate").addEventListener("click", ()=>{
 	var qty1 = Number(document.getElementById("amount1").value);
 	var total = qty1 * 5;
 	document.getElementById("total").innerHTML("Total Cost: $" + total);
 	if(qty1 == 147258369) {
 		document.getElementById("orderpage").innerHTML("<center><h1>Grayson knows the secret code and he is awesome!</h1></center>");
 	}
-});
+});*/
 
 
-/*$("#calculate").click(function() {
+$("#calculate").click(function() {
 	var qty1 = Number($("#amount1").val());
 	//var qty2 = Number($("#amount2").val());
 	//var qty3 = Number($("#amount3").val());
 	//var qty4 = Number($("#amount4").val());
 	//var qty5 = Number($("#amount5").val());
-	var deliverytot = Number($("#pickup").val());
-	var total = qty1 * 5 + deliverytot - 1;
+	var total = qty1 * 5;
 	$("#total").text("Total Cost: $" + total);
 	if(qty1 == 147258369) {
 		$("#orderpage").html("<center><h1>Grayson knows the secret code and he is awesome!</h1></center>");
 	}
-});*/
+});
 
 
 
