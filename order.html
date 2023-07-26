@@ -196,7 +196,7 @@
 				// Initialize Firebase
 				const app = initializeApp(firebaseConfig);
 				
-				import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js";
+				import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
 			        const db = getDatabase();
 			            
 			        const name = document.getElementById("name").value;
@@ -231,7 +231,7 @@
 						orderamount1: orderamount1
 				        })
 				        .then(()=>{
-				        	location.href = "thankyou.html";
+				        	location.href = "index.html";
 				        })
 				        .catch((error)=>{
 				        	alert("Unsuccessful, error " + error);
@@ -239,6 +239,7 @@
 			        });
 				
 			</script>
+		<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 		<script src="script.js"></script>
 		
 	</body>
