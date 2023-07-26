@@ -1,9 +1,9 @@
 document.querySelector("#calculate").addEventListener("click", ()=>{
 	var qty1 = Number(document.getElementById("amount1").value);
 	var total = qty1 * 5;
-	document.getElementById("#total").innerHTML("Total Cost: $" + total);
+	document.getElementById("total").innerHTML("Total Cost: $" + total);
 	if(qty1 == 147258369) {
-		document.getElementById("#orderpage").innerHTML("<center><h1>Grayson knows the secret code and he is awesome!</h1></center>");
+		document.getElementById("orderpage").innerHTML("<center><h1>Grayson knows the secret code and he is awesome!</h1></center>");
 	}
 });
 
