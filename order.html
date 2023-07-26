@@ -50,7 +50,7 @@
 						<label for="comments">Comments or Questions?</label><br>
 						<textarea id="comments" name="comments" cols="20" rows="8"></textarea><br><br><br>
 
-						<label for="pickup" class="pickup">Pickup or Delivery?</label><br>
+						<!--<label for="pickup" class="pickup">Pickup or Delivery?</label><br>
 						<p class="optional">Local Deliveries Only!</p>
 						<p class="optional">$1 Extra For Delivery</p>
 
@@ -59,7 +59,7 @@
 								<option id="pickup1" name="pickuptot" value="1">Pickup</option>
 								<option id="delivery" name="delivery" value="2">Delivery</option>
 							</select>
-						</div>
+						</div>-->
 					</div><br><br>
 					
 					
@@ -166,7 +166,7 @@
 						</div>-->
 					</div><br>
 
-					<input type="submit" value="Order!" name="submit" class="sendButton" id="sendButton">
+					<input type="submit" value="Order!" name="submit" class="sendButton" id="insertdata">
 				</form>
 				<div class="cost">
 					<button id="calculate">Calculate Cost</button><br>
@@ -196,6 +196,47 @@
 				// Initialize Firebase
 				const app = initializeApp(firebaseConfig);
 				
+				import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js";
+			        const db = getDatabase();
+			            
+			        const name = document.getElementById("name").value;
+				const email = document.getElementById("email").value;
+				const address = document.getElementById("address").value;
+				const city = document.getElementById("city").value;
+				const state = document.getElementById("state").value;
+				const comments = document.getElementById("comments").value;
+				const ordertype1 = document.getElementById("type1").value;
+				const orderamount1 = document.getElementById("amount1").value;
+			        const insBtn = document.getElementById("insertdata");
+			            
+			        document.querySelector("#insertdata").addEventListener("click", ()=>{
+				        const name = document.getElementById("name").value;
+					const email = document.getElementById("email").value;
+					const address = document.getElementById("address").value;
+					const city = document.getElementById("city").value;
+					const state = document.getElementById("state").value;
+					const comments = document.getElementById("comments").value;
+					const ordertype1 = document.getElementById("type1").value;
+					const orderamount1 = document.getElementById("amount1").value;
+						    
+				                
+			                set(ref(db, "Customers/" + name), {
+				        	name: name,
+				                email: email,
+						address: address,
+						city: city,
+						state: state,
+						comments: comments,
+						ordertype1: ordertype1,
+						orderamount1: orderamount1
+				        })
+				        .then(()=>{
+				        	location.href = "thankyou.html";
+				        })
+				        .catch((error)=>{
+				        	alert("Unsuccessful, error " + error);
+				        });
+			        });
 				
 			</script>
 		<script src="script.js"></script>
