@@ -234,8 +234,7 @@
 						orderamount1: orderamount1
 				        })
 				        .then(()=>{
-						
-				        	location.href = "index.html";
+						$("#orderpage").html("<center><h1>Success!</h1></center>");
 				        })
 				        .catch((error)=>{
 				        	alert("Unsuccessful, error " + error);
