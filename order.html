@@ -28,7 +28,7 @@
 				<p class="optional2">Venmo order total to @BETHANY-MOORE-0</p><br>
 
 
-				<form id="emailform">
+				
 					<div class="emailInfo">
 
 						<label for="name" class="name">Full Name:</label><br>
@@ -167,7 +167,7 @@
 					</div><br>
 
 					<input type="submit" name="submit" class="sendButton" id="insertdata">
-				</form>
+				
 				<div class="cost">
 					<button id="calculate">Calculate Cost</button><br>
 					<h2 id="total" name="Cost">Total Cost: $0</h2>
@@ -219,8 +219,20 @@
 					const ordertype1 = document.getElementById("type1").value;
 					const orderamount1 = document.getElementById("amount1").value;
 
-					if(name == "" || email == "" || address == "" || city == "" || state == "" || comments == "" || ordertype1 == "" || orderamount1 == "") {
-						
+					if(name == "") { 
+						alert("Please enter your name");
+					} if else(email == "") {
+						alert("Please enter an email");
+					} if else(address == "") {
+						alert("Please enter an address");
+					} if else(city == "") {
+						alert("Please enter a city");
+					} if else(state == "") {
+						alert("Please enter a state");
+					} if else(ordertype1 == "") {
+						alert("Please order a flavor!");
+					} if else(orderamount1 == "") {
+						alert("Please order some pickles!");
 					} else {
 				                
 			                set(ref(db, "Customers/" + name), {
