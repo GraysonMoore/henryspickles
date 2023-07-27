@@ -86,12 +86,12 @@ option, select {
 }
 
 #calculate {
-	font-size: 17px;
+	font-size: 22px;
 }
 
 .sendButton {
 	float: right;
-	margin-right: 20%;
+	margin-right: 10%;
 	margin-top: 15px;
 	font-size: 30px;
 }
@@ -212,6 +212,7 @@ ol {
 }
 .reviews {
 	margin-left: 10px;
+	margin-right: 10px;
 }
 h4 {
 	margin-left: 45px;
