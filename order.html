@@ -74,7 +74,7 @@
 
 								<label for="type1">Type: </label>
 								<select id="type1" name="type1">
-									<option value="1">Original</option>
+									<option value="Original">Original</option>
 									<option value="2" disabled>Extra Garlic - Out Of Stock</option>
 									<option value="3" disabled>Spicy - Out Of Stock</option>
 									<option value="4" disabled>Special Recipe - Out Of Stock</option>
@@ -246,7 +246,7 @@
 						orderamount1: orderamount1
 				        })
 				        .then(()=>{
-						$("#orderpage").html("<center><h1>Success!</h1></center>");
+						$("#orderpage").html("<center><h1>Thank you for your order!</h1><br><p>Your jars are being prepared by Henry</p><br><p>Henry will contact you regarding your order.</p></center>");
 				        })
 				        .catch((error)=>{
 				        	alert("Unsuccessful, error " + error);
