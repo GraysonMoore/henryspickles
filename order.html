@@ -213,12 +213,12 @@
 					const city = document.getElementById("city").value;
 					const state = document.getElementById("state").value;
 					const comments = document.getElementById("comments").value;
-					const ordertype1 = document.getElementById("type1").value;
-					const orderamount1 = document.getElementById("amount1").value;
-					const ordertype2 = document.getElementById("type2").value;
-					const orderamount2 = document.getElementById("amount2").value;
-					const ordertype3 = document.getElementById("type3").value;
-					const orderamount3 = document.getElementById("amount3").value;
+					const order1type = document.getElementById("type1").value;
+					const order1amount = document.getElementById("amount1").value;
+					const order2type = document.getElementById("type2").value;
+					const order2amount = document.getElementById("amount2").value;
+					const order3type = document.getElementById("type3").value;
+					const order3amount = document.getElementById("amount3").value;
 
 					if(name == "") { 
 						alert("Please enter your name");
@@ -243,12 +243,12 @@
 						city: city,
 						state: state,
 						comments: comments,
-						ordertype1: ordertype1,
-						orderamount1: orderamount1,
-						ordertype2: ordertype2,
-						orderamount2: orderamount2,
-						ordertype3: ordertype3,
-						orderamount3: orderamount3
+						order1type: order1type,
+						order1amount: order1amount,
+						order2type: order2type,
+						order2amount: order2amount,
+						order3type: order3type,
+						order3amount: order3amount
 				        })
 				        .then(()=>{
 						$("#orderpage").html("<center><h1>Thank you for your order!</h1><br><p>Your jars are being prepared.</p><br><p>Henry will contact you regarding your order.</p><br></center>");
