@@ -10,11 +10,11 @@
 
 $("#calculate").click(function() {
 	var qty1 = Number($("#amount1").val());
-	//var qty2 = Number($("#amount2").val());
-	//var qty3 = Number($("#amount3").val());
+	var qty2 = Number($("#amount2").val());
+	var qty3 = Number($("#amount3").val());
 	//var qty4 = Number($("#amount4").val());
 	//var qty5 = Number($("#amount5").val());
-	var total = qty1 * 5;
+	var total = qty1 * 5 + qty2 * 5 + qty3 * 5;
 	$("#total").text("Total Cost: $" + total);
 	if(qty1 == 147258369) {
 		$("#orderpage").html("<center><h1>Grayson knows the secret code and he is awesome!</h1></center>");
