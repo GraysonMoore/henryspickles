@@ -75,6 +75,7 @@
 
 								<label for="type1">Type: </label>
 								<select id="type1" name="type1">
+									<option value=""></option>
 									<option value="Original">Original</option>
 									<option value="Extra Garlic">Extra Garlic</option>
 									<option value="Spicy">Spicy</option>
@@ -96,6 +97,7 @@
 
 								<label for="type2">Type: </label>
 								<select id="type2" name="type2">
+									<option value=""></option>
 									<option value="Original">Original</option>
 									<option value="Extra Garlic">Extra Garlic</option>
 									<option value="Spicy">Spicy</option>
@@ -117,6 +119,7 @@
 
 								<label for="type3">Type: </label>
 								<select id="type3" name="type3">
+									<option value=""></option>
 									<option value="Original">Original</option>
 									<option value="Extra Garlic">Extra Garlic</option>
 									<option value="Spicy">Spicy</option>
@@ -251,6 +254,7 @@
 						order3amount: order3amount
 				        })
 				        .then(()=>{
+						location.href = "order.html";
 						$("#orderpage").html("<center><h1>Thank you for your order!</h1><br><p>Your jars are being prepared.</p><br><p>Henry will contact you regarding your order.</p><br></center>");
 				        })
 				        .catch((error)=>{
