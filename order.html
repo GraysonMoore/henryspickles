@@ -22,9 +22,10 @@
 			<br>
 			
 			<div id="orderpage">
-				<h1 class="orderhead">Sorry, all out! Come back next year!</h1><br>
+				<!--<h1 class="orderhead">Sorry, all out! Come back next year!</h1><br>-->
 				<h2 class="orderhead">Cost per Pint Jar: $5</h2><br>
-				<p class="optional2">Payment collected upon pickup or delivery OR</p><br>
+				<p class="optional2">Payment collected upon pickup or delivery</p><br>
+				<p class="optional2">OR</p><br>
 				<p class="optional2">Venmo order total to @BETHANY-MOORE-0</p><br>
 
 
@@ -75,9 +76,8 @@
 								<label for="type1">Type: </label>
 								<select id="type1" name="type1">
 									<option value="Original">Original</option>
-									<option value="2" disabled>Extra Garlic - Out Of Stock</option>
-									<option value="3" disabled>Spicy - Out Of Stock</option>
-									<option value="4" disabled>Special Recipe - Out Of Stock</option>
+									<option value="Extra Garlic">Extra Garlic</option>
+									<option value="Spicy">Spicy</option>
 								</select>
 								<!--<label for="size1">Size: </label>
 								<select id="size1" name="size1">
@@ -87,7 +87,7 @@
 							</center>
 						</div><br><br>
 
-						<!--<div class="order2">
+						<div class="order2">
 							<center>
 								<label for="amount2" class="amount2title">Order #2:</label>
 								<p class="optional">*optional</p>
@@ -96,16 +96,15 @@
 
 								<label for="type2">Type: </label>
 								<select id="type2" name="type2">
-									<option value="1" disabled>Original - Out Of Stock</option>
-									<option value="2" disabled>Extra Garlic - Out Of Stock</option>
-									<option value="3" disabled>Spicy - Out Of Stock</option>
-									<option value="4" disabled>Special Recipe - Out Of Stock</option>
+									<option value="Original">Original</option>
+									<option value="Extra Garlic">Extra Garlic</option>
+									<option value="Spicy">Spicy</option>
 								</select>
 								<!--<label for="size2">Size: </label>
 								<select id="size2" name="size2">
 									<option value="5">Pint</option>
 									<option value="10">Quart</option>
-								</select>
+								</select>-->
 							</center>
 						</div><br><br>
 
@@ -118,20 +117,19 @@
 
 								<label for="type3">Type: </label>
 								<select id="type3" name="type3">
-									<option value="1" disabled>Original - Out Of Stock</option>
-									<option value="2" disabled>Extra Garlic - Out Of Stock</option>
-									<option value="3" disabled>Spicy - Out Of Stock</option>
-									<option value="4" disabled>Special Recipe - Out Of Stock</option>
+									<option value="Original">Original</option>
+									<option value="Extra Garlic">Extra Garlic</option>
+									<option value="Spicy">Spicy</option>
 								</select>
 								<!--<label for="size3">Size: </label>
 								<select id="size3" name="size3">
 									<option value="5">Pint</option>
 									<option value="10">Quart</option>
-								</select>
+								</select>-->
 							</center>
 						</div><br><br>
 						
-						<div class="order4">
+						<!--<div class="order4">
 							<center>
 								<label for="amount4" class="amount4title">Order #4:</label>
 								<p class="optional">*optional</p>
@@ -174,7 +172,6 @@
 				</div>
 			</div>
 			
-			<footer>&copy; 2021 Grayson Moore</footer>
 		</div>
 			<script type="module">
 				// Import the functions you need from the SDKs you need
@@ -218,6 +215,10 @@
 					const comments = document.getElementById("comments").value;
 					const ordertype1 = document.getElementById("type1").value;
 					const orderamount1 = document.getElementById("amount1").value;
+					const ordertype2 = document.getElementById("type2").value;
+					const orderamount2 = document.getElementById("amount2").value;
+					const ordertype3 = document.getElementById("type3").value;
+					const orderamount3 = document.getElementById("amount3").value;
 
 					if(name == "") { 
 						alert("Please enter your name");
@@ -243,10 +244,14 @@
 						state: state,
 						comments: comments,
 						ordertype1: ordertype1,
-						orderamount1: orderamount1
+						orderamount1: orderamount1,
+						ordertype2: ordertype2,
+						orderamount2: orderamount2,
+						ordertype3: ordertype3,
+						orderamount3: orderamount3
 				        })
 				        .then(()=>{
-						$("#orderpage").html("<center><h1>Thank you for your order!</h1><br><p>Your jars are being prepared by Henry</p><br><p>Henry will contact you regarding your order.</p></center>");
+						$("#orderpage").html("<center><h1>Thank you for your order!</h1><br><p>Your jars are being prepared.</p><br><p>Henry will contact you regarding your order.</p></center>");
 				        })
 				        .catch((error)=>{
 				        	alert("Unsuccessful, error " + error);
