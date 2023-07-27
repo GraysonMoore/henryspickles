@@ -219,7 +219,7 @@
 					const ordertype1 = document.getElementById("type1").value;
 					const orderamount1 = document.getElementById("amount1").value;
 
-					if(name == "") {
+					if(name == "" || email == "" || address == "" || city == "" || state == "" || comments == "" || ordertype1 == "" || orderamount1 == "") {
 						
 					} else {
 				                
@@ -234,6 +234,7 @@
 						orderamount1: orderamount1
 				        })
 				        .then(()=>{
+						
 				        	location.href = "index.html";
 				        })
 				        .catch((error)=>{
