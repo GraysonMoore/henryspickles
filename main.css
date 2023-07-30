@@ -155,12 +155,12 @@ option, select {
 }
 
 .dress2 {
-	margin-top: -5.5%;
+	margin-top: -7%;
 	text-align: center;
 }
 
 .dress3 {
-	margin-top: -5.5%;
+	margin-top: -7%;
 	float: right;
 	margin-right: 10%;
 }
@@ -180,7 +180,7 @@ textarea {
 
 .order1 {
 	font-size: 20px;
-	margin-left: -70%;
+	margin-left: -68%;
 }
 
 .form1 {
@@ -193,7 +193,7 @@ textarea {
 }
 
 .order2 {
-	margin-top: -21.5%;
+	margin-top: -24%;
 	text-align: center;
 	font-size: 20px;
 }
@@ -204,7 +204,7 @@ textarea {
 
 .order3 {
 	float: right;
-	margin-top:-21.5%;
+	margin-top:-24%;
 	margin-right:7%;
 	font-size: 20px;
 	padding: 0px;
