@@ -153,6 +153,7 @@ option, select {
 	display: flex;
 	text-align: center;
 	font-size: 20px;
+	font-family: Ariel;
 }
 
 textarea {
