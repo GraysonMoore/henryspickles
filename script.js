@@ -19,7 +19,7 @@ $("#stickernumber").text(numb);
 /////////////////////////////////////////////////////////////////////////////
 
 var numbo = Number(document.getElementById("stickernumberorder"));
-numbo = 1;
+numbo = 0;
 $("#addorder").click(function() {
 	if(numbo <= 99) {
 		numbo = Number(numbo)+1;
