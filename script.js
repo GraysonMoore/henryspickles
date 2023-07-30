@@ -29,7 +29,7 @@ $("#addorder").click(function() {
 $("#stickernumberorder").text(numbo);
 
 $("#subtractorder").click(function() {
-	if(numbo >= 2) {
+	if(numbo >= 1) {
 		numbo = Number(numbo)-1;
 		$("#stickernumberorder").text(numbo);
 	}
