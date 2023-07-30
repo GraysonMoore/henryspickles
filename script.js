@@ -1,19 +1,47 @@
-/*document.querySelector("#calculate").addEventListener("click", ()=>{
-	var qty1 = Number(document.getElementById("amount1").value);
-	var total = qty1 * 5;
-	document.getElementById("total").innerHTML("Total Cost: $" + total);
-	if(qty1 == 147258369) {
-		document.getElementById("orderpage").innerHTML("<center><h1>Grayson knows the secret code and he is awesome!</h1></center>");
+var numb = Number(document.getElementById("stickernumber"));
+numb = 1;
+$("#add").click(function() {
+	if(numb <= 99) {
+		numb = Number(numb)+1;
+		$("#stickernumber").text(numb);
 	}
-});*/
+});
+$("#stickernumber").text(numb);
 
+$("#subtract").click(function() {
+	if(numb >= 2) {
+		numb = Number(numb)-1;
+		$("#stickernumber").text(numb);
+	}
+});
+$("#stickernumber").text(numb);
+
+/////////////////////////////////////////////////////////////////////////////
+
+var numbo = Number(document.getElementById("stickernumberorder"));
+numbo = 1;
+$("#addorder").click(function() {
+	if(numbo <= 99) {
+		numbo = Number(numbo)+1;
+		$("#stickernumberorder").text(numbo);
+	}
+});
+$("#stickernumberorder").text(numbo);
+
+$("#subtractorder").click(function() {
+	if(numbo >= 2) {
+		numbo = Number(numbo)-1;
+		$("#stickernumberorder").text(numbo);
+	}
+});
+$("#stickernumberorder").text(numbo);
+
+///////////////////////////////////////////////////////////////////////
 
 $("#calculate").click(function() {
 	var qty1 = Number($("#amount1").val());
 	var qty2 = Number($("#amount2").val());
 	var qty3 = Number($("#amount3").val());
-	//var qty4 = Number($("#amount4").val());
-	//var qty5 = Number($("#amount5").val());
 	var total = qty1 * 5 + qty2 * 5 + qty3 * 5;
 	$("#total").text("Total Cost: $" + total);
 	if(qty1 == 147258369) {
@@ -22,6 +50,24 @@ $("#calculate").click(function() {
 });
 
 
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*document.querySelector("#calculate").addEventListener("click", ()=>{
+	var qty1 = Number(document.getElementById("amount1").value);
+	var total = qty1 * 5;
+	document.getElementById("total").innerHTML("Total Cost: $" + total);
+	if(qty1 == 147258369) {
+		document.getElementById("orderpage").innerHTML("<center><h1>Grayson knows the secret code and he is awesome!</h1></center>");
+	}
+});*/
 
 
 //-------------------------------------------------------------------------------------------------------------------
