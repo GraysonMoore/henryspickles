@@ -150,6 +150,14 @@ option, select {
 	font-size:20px;
 }
 
+.addylist {
+	list-style-type: none;
+	display: flex;
+	text-align: center;
+	padding: 0px;
+	font-size: 20px;
+}
+
 textarea {
 	resize: none;
 }
