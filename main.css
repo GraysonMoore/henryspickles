@@ -154,7 +154,6 @@ option, select {
 	list-style-type: none;
 	display: flex;
 	text-align: center;
-	padding: 0px;
 	font-size: 20px;
 }
 
@@ -173,6 +172,13 @@ textarea {
 
 .olist {
 	width: 30%;
+}
+
+.orderlist {
+	list-style-type: none;
+	display: flex;
+	text-align: center;
+	font-size: 30px;
 }
 
 .order1 {
