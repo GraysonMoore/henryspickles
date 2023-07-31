@@ -19,7 +19,7 @@
 						<li id="l"><a href="reviews.html" style="color: white;">REVIEWS</a></li>
 					</ul>
 				</div>
-        			<center>
+        			<center id="stickerpage">
           				<h1>Stickers For Sale!</h1>
           				<p>Write all your junk here. It's 10&cent; a sticker. Yep!</p>
           				<div class="stickerinputs">
@@ -69,12 +69,75 @@
 					<svg height="20" width="100%">
 						<line x1="4%" y1="0" x2="96%" y2="0" style="stroke:rgb(0,0,0);stroke-width:5" />
 					</svg><br><br>
-					<button class="orderstickers">ORDER STICKERS!</button>
-        				</center>
+					<button class="orderstickers" id="insertdata">ORDER STICKERS!</button>
+        			</center>
 			</section><br><br>
-			
-			<footer>&copy; 2021 Grayson Moore</footer>
 		</div>
+		<script type="module">
+				// Import the functions you need from the SDKs you need
+				import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+				// TODO: Add SDKs for Firebase products that you want to use
+				// https://firebase.google.com/docs/web/setup#available-libraries
+			
+				// Your web app's Firebase configuration
+				const firebaseConfig = {
+				apiKey: "AIzaSyDEd3p345bo8RKRsLjbQo1AKbNG-BLwN9g",
+				authDomain: "henry-s-pickle-orders.firebaseapp.com",
+				databaseURL: "https://henry-s-pickle-orders-default-rtdb.firebaseio.com",
+				projectId: "henry-s-pickle-orders",
+				storageBucket: "henry-s-pickle-orders.appspot.com",
+				messagingSenderId: "296129910902",
+				appId: "1:296129910902:web:9b405c070cd67e78242757"
+				};
+			
+				// Initialize Firebase
+				const app = initializeApp(firebaseConfig);
+				
+				import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
+			        const db = getDatabase();
+			            
+			        
+			        const insBtn = document.getElementById("insertdata");
+			            
+			        document.querySelector("#insertdata").addEventListener("click", ()=>{
+				        const name = document.getElementById("name").value;
+					const email = document.getElementById("email").value;
+					const address = document.getElementById("address").value;
+					const city = document.getElementById("city").value;
+					const state = document.getElementById("state").value;
+					const stickers = document.getElementById("stickernumber").value;
+
+					if(name == "") { 
+						alert("Please enter your name");
+					} else if(email == "") {
+						alert("Please enter an email");
+					} else if(address == "") {
+						alert("Please enter an address");
+					} else if(city == "") {
+						alert("Please enter a city");
+					} else if(state == "") {
+						alert("Please enter a state");
+					} else {
+				                
+			                set(ref(db, "StickerCustomers/" + name), {
+				        	name: name,
+				                email: email,
+						address: address,
+						city: city,
+						state: state,
+						stickers: stickers
+				        })
+				        .then(()=>{
+						$("#stickerpage").html("<center><h1>Thank you for your order!</h1><br><p>I will get them to you as soon as I can.</p><br></center>");
+				        })
+				        .catch((error)=>{
+				        	alert("Unsuccessful, error " + error);
+				        });
+
+					}
+			        });
+				
+			</script>
 		<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 		<script src="script.js"></script>
 	</body>
