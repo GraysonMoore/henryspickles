@@ -54,9 +54,9 @@
 					<p style="text-decoration:underline;">How would you like to receive them?</p>
 					<p class="optional">*by mail is extra 50&cent;</p>
 					<div>
-						<select>
-							<option>By Mail</option>
-							<option>Pickup</option>
+						<select id="mail">
+							<option value="mail">By Mail</option>
+							<option value="pickup">Pickup</option>
 						</select>
 					</div><br><br>
 					<p style="text-decoration:underline;">How many stickers would you like?</p>
@@ -106,6 +106,7 @@
 					const city = document.getElementById("city").value;
 					const state = document.getElementById("state").value;
 					const stickers = document.getElementById("stickernumber").value;
+					const mail = document.getElementById("mail").value;
 
 					if(name == "") { 
 						alert("Please enter your name");
@@ -125,7 +126,8 @@
 						address: address,
 						city: city,
 						state: state,
-						stickers: stickers
+						stickers: stickers,
+						mail: mail
 				        })
 				        .then(()=>{
 						$("#stickerpage").html("<center><h1>Thank you for your order!</h1><br><p>I will get them to you as soon as I can.</p><br></center>");
