@@ -1,4 +1,4 @@
-var numb = Number(document.getElementById("stickernumber"));
+/*var numb = Number(document.getElementById("stickernumber"));
 numb = 1;
 $("#add").click(function() {
 	if(numb <= 99) {
@@ -14,11 +14,12 @@ $("#subtract").click(function() {
 		$("#stickernumber").text(numb);
 	}
 });
-$("#stickernumber").text(numb);
+$("#stickernumber").text(numb);*/
 
 /////////////////////////////////////////////////////////////////////////////
 
-var numbo = Number(document.getElementById("stickernumberorder"));
+
+/*var numbo = Number(document.getElementById("stickernumberorder"));
 numbo = 0;
 $("#addorder").click(function() {
 	if(numbo <= 99) {
@@ -50,12 +51,7 @@ $("#calculate").click(function() {
 	if(qty1 == 147258369) {
 		$("#orderpage").html("<center><h1>Grayson knows the secret code and he is awesome!</h1></center>");
 	}
-});
-
-
-
-
-
+});*/
 
 
 
