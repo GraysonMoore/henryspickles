@@ -203,7 +203,7 @@
 				$("#stickernumberorder").text(numbo);
 				
 				///////////////////////////////////////////////////////////////////////
-				
+				var total;
 				$("#calculate").click(function() {
 					var qty1 = Number($("#amount1").val());
 					var qty2 = Number($("#amount2").val());
@@ -267,6 +267,7 @@
 					const order3type = document.getElementById("type3").value;
 					const order3amount = document.getElementById("amount3").value;
 					const stickers = numbo;
+					const totalcost = total;
 
 					if(name == "") { 
 						alert("Please enter your name");
@@ -297,7 +298,8 @@
 						order2amount: order2amount,
 						order3type: order3type,
 						order3amount: order3amount,
-						stickers: stickers
+						stickers: stickers,
+						totalcost: totalcost
 				        })
 				        .then(()=>{
 						$("#orderpage").html("<center><h1>Thank you for your order!</h1><br><p>Your jars are being prepared.</p><br><p>Henry will contact you regarding your order.</p><br></center>");
