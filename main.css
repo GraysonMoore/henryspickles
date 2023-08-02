@@ -228,11 +228,11 @@ textarea {
 }
 
 .com {
-	
+	text-align: left;
 }
 
 .combox {
-	text-align: left;
+	text-align: center;
 }
 
 /*--------------------------------Reviews----------------------------*/
