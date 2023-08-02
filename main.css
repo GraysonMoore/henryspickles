@@ -156,10 +156,6 @@ option, select {
 	font-family: Ariel;
 }
 
-textarea {
-	resize: none;
-}
-
 /*--------------------------------Special-------------------------------------*/
 
 .special {
@@ -227,9 +223,21 @@ textarea {
 	margin-top: -15px;
 }
 
+.container {
+	width: 80%;
+}
+
+.com {
+	float: left;
+}
+	
 .combox {
-	text-align: left;
-	margin-left: 9%;
+	text-align: center;
+}
+
+textarea {
+	resize: none;
+	width: 80%;
 }
 
 /*--------------------------------Reviews----------------------------*/
