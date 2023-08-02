@@ -223,9 +223,7 @@ option, select {
 	margin-top: -15px;
 }
 
-.container {
-	width: 80%;
-}
+.container {}
 
 .com {
 	float: left;
@@ -233,11 +231,13 @@ option, select {
 	
 .combox {
 	text-align: center;
+	justify-content: center;
+	display: flex;
 }
 
 textarea {
 	resize: none;
-	width: 80%;
+	width: 100%;
 }
 
 /*--------------------------------Reviews----------------------------*/
