@@ -126,7 +126,6 @@
 			            
 			        document.querySelector("#insertdata").addEventListener("click", ()=>{
 				        const name = document.getElementById("name").value;
-					const stickname = name + "Stickers";
 					const email = document.getElementById("email").value;
 					const address = document.getElementById("address").value;
 					const city = document.getElementById("city").value;
@@ -146,14 +145,14 @@
 						alert("Please enter a state");
 					} else {
 				                
-			                set(ref(db, "Customers/" + stickname), {
+			                set(ref(db, "StickerCustomers/" + name), {
 				        	name: name,
 				                email: email,
 						address: address,
 						city: city,
 						state: state,
 						stickers: stickers,
-						zmail: mail
+						zmail: zmail
 				        })
 				        .then(()=>{
 						$("#stickerpage").html("<center><h1>Thank you for your order!</h1><br><p>Henry will get them to you as soon as he can.</p></center>");
