@@ -227,12 +227,9 @@ textarea {
 	margin-top: -15px;
 }
 
-.com {
-	text-align: left;
-}
-
 .combox {
-	text-align: center;
+	text-align: left;
+	margin-left: 9%;
 }
 
 /*--------------------------------Reviews----------------------------*/
