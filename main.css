@@ -57,11 +57,22 @@ ul {
 	width: 30%;
 	z-index: 9;
 }
-.newpic {
+
+.newerpic {
+	float: left;
+}
+	
+.linkbox {
+	text-align: center;
+	justify-content: center;
+	display: flex;
+}
+
+/*.newpic {
 	position: absolute;
 	z-index: 10;
 	margin-top: -3%;
-}
+}*/
 
 /*-------------------------------STICKER SHOP PVZ-----------------------------------------*/
 
