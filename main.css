@@ -57,8 +57,12 @@ ul {
 	width: 30%;
 }
 
+.stickerlink {
+	margin-left:-5%;
+}
+
 .newerpic {
-	float: left;
+	width:13%;
 }
 	
 .linkbox {
