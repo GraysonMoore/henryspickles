@@ -29,7 +29,7 @@
 				</div>
         			<center id="stickerpage">
           				<h1>Stickers For Sale!</h1>
-          				<p>$1 each</p>
+          				<p>50&cent; each</p>
           				<div class="stickerinputs">
             					<label for="name" class="name">Full Name:</label><br>
 						<input type="text" id="name" name="name"><br><br>
@@ -59,14 +59,14 @@
 							</li>
 						</ul>
           				</div>
-					<p style="text-decoration:underline;">How would you like to receive them?</p>
+					<!--<p style="text-decoration:underline;">How would you like to receive them?</p>
 					<div>
 						<select id="mail">
 							<option value="mail">By Mail</option>
 							<option value="pickup">Pickup</option>
 						</select>
 					</div>
-					<p class="optional">*by mail is extra 50&cent;</p><br>
+					<p class="optional">*by mail is extra 50&cent;</p><br>-->
 					<center>
 						<p class="optional">Payment collected upon pickup or delivery OR Venmo @BETHANY-MOORE-0</p><br>
 					</center>
@@ -139,7 +139,6 @@
 					const city = document.getElementById("city").value;
 					const state = document.getElementById("state").value;
 					const stickers = numb;
-					const zmail = document.getElementById("mail").value;
 
 					if(name == "") { 
 						alert("Please enter your name");
@@ -159,8 +158,7 @@
 						address: address,
 						city: city,
 						state: state,
-						stickers: stickers,
-						zmail: zmail
+						stickers: stickers
 				        })
 				        .then(()=>{
 						$("#stickerpage").html("<center><h1>Thank you for your order!</h1><br><p>Henry will get them to you as soon as he can.</p></center>");
